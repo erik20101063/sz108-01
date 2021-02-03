@@ -31,6 +31,7 @@ public class ItemsController {
     @RequestMapping("/list")
     public String findAll(Model model, HttpServletRequest req){
         // 调用业务查询所有
+        // 调用业务查询所有
         List<Items> list = itemsService.findAll();
         // 塞给页面 key = value
         model.addAttribute("items",list);
