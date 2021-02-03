@@ -35,6 +35,7 @@ public class ItemsController {
         List<Items> list = itemsService.findAll();
         // 塞给页面 key = value
         model.addAttribute("items",list);
+        System.out.println("我才是老大....")
         return "items";
     }
 
